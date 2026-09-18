@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Boostrap css link-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <!-- boostrap js script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <!-- tailwind  script-->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <!-- Boostrap icons -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+       <!-- external css -->
+        <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<!-- nav bar -->
+ 
+<nav class="bg-blue-900 fixed w-full  z-20 top-0 start-0 border-b border-default">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between py-1 ps-3 m-1 ms-5">
+    
+       <h1 class="text-white"><i class="bi bi-phone text-primary"></i>Mobile<span class="text-primary">Hub</span></h1>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10  justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary text-decoration-none">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 text-decoration-none" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#products" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-white text-decoration-none">Products</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-white text-decoration-none">About</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent text-white text-decoration-none">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- banner -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-white">
+                <p class="hero-tag">
+                    Next Generation Smartphones
+                </p>
+                <h1 style=" color:#142b4a;">Find Your Perfect <br>Smartphone</h1>
+                <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero impedit quibusdam harum ipsam quam quo amet ut, quos dolore enim quis ab provident et eum consequatur magnam cumque assumenda.</p>
+                <div class="mt-3">
+                    <a href="#products" class="btn btn-primary me-2"><i class="bi bi-cart text-primary"></i>Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- products -->
+ <section id="products">
+    <div class="container mt-3 d-flex flex-columns justify-content-center">
+        <h1>Our Latest Phones</h1>
+        
+    </div>
+    <div class="container mt-5 d-flex flex-columns justify-content-center">
+        
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view details</button>
+                </div>
+            </div>
+        </div>
+       
+        
+    </div>
+    <div class="container mt-3 d-flex flex-columns justify-content-center mt-5">
+        
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view details</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view details</button>
+
+
+                </div>
+            </div>
+        </div>
+       
+        
+    </div>
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzu_NSvZGkKiTfSdAi4Z0-nKeRIxV-ONVCPYzEz8xX6Xt7pCiYa3BxjjzwY6XXWRYvHWn6qQFboYdyMrjq2-FYfJHXQMmJxDniBXWk9LZ0m_25rEMP_9zb3A " width="100%" heigth="300px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bolder">Samsung</h5>
+                    <p class="card-text text-black fw-bold">IGalaxy s24</p>
+                    <p><i class="bi bi-currency-rupee text-black fw-bold "></i>79,999</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+
+ <!-- about -->
+  <section id="about">
+    <div class="container d-flex flex-columns-justify-content-center align-items-center my-5">
+        <div class="col-6">
+            <img src="https://hummingtree.com/wp-content/uploads/2024/08/3-5-scaled.webp">
+        </div>
+
+        <div class="col-6 ">
+            <h4 class="text-center text-primary">About MobileHub</h4>
+            <h1 class="text-center text-black">Your Trusted Mobile Store</h1>
+            <p class="px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis vitae vel, sed repellat odio quae consectetur itaque doloremque porro aspernatur quos, molestiae adipisci, tempore dolorum. Nam, eveniet hic. Tempore.
+            Fuga consectetur doloremque blanditiis sed eum reiciendis et aspernatur vero ullam in, dignissimos officia nesciunt quae esse quo inventore illo itaque! Commodi explicabo similique molestiae deserunt quis corrupti, ut perferendis.</p>
+            
+        </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+   <section id="contact">
+    <div class="container mt-3 d-flex flex-columns justify-content-center">
+        <h1 style="color:#142b4a">Contact Us</h1>
+
+    </div>
+            <div class="container d-flex justify-content-center">
+            <div class="col-4"></div>
+            <div class="col-4 ">
+         <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+        </div>
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+         <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="phone number">
+        </div>
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button class="btn btn-primary rounded-3 shadow-lg mt-3">Submit</button>
+        </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+   </section>
+
+   <!-- footer -->
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-blue-900 text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span class="text-white">Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset text-white">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5  text-light">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05); text-light">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold text-light text-decoration-none" href="https://mdbootstrap.com/">MobileHub.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
